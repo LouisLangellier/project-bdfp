@@ -10,7 +10,11 @@ Contenu du fichier
 Introduction
 ------------
 
-Repo pour projet tuteuré.
+Cette application a pour but de gérer les films d'un utilisateur.
+Une fois un compte créé, il pourra ajouter des films depuis 2 API selon son choix : OMDB et TMDB (Bases de données filmique).
+Seules les informations essentielles de l'utilisateur sont stockées dans une base de données mongoDB. Les données concernant les films sont récupérées en temps réel via les différentes API.
+Les films sont triables selon des listes que l'utilisateur pourra créer.
+Les listes sont également partageables et téléchargeables selon les besoins.
 
 Préconditions
 ------------
@@ -69,3 +73,4 @@ Développeurs
  * Louis Langellier
  * Marion Delattre
  * Dan Vovc
+ * Geoffrey Servant
