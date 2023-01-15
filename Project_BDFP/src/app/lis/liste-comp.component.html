@@ -1,0 +1,16 @@
+<div id="entier">
+    
+    <div class="form-group">
+        <mat-form-field appearance="fill">
+          <mat-icon matSuffix>search</mat-icon>
+          <input matInput type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder="titre d'un film">
+        </mat-form-field>
+    </div>
+    
+    <div id="comp-liste"*ngFor="let liste of listofFilms | filter:searchText titrelist">
+        <li>{{ liste.titrelist }}</li>
+        <button mat-button (click)="gererListe(liste)">Gérer la liste</button>
+    </div>
+</div>
+
+

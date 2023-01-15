@@ -1,0 +1,93 @@
+<div id="entete">
+    <button id="retour" mat-mini-fab (click)="back()"><mat-icon>arrow_back</mat-icon></button>
+    <h1> Film vu</h1>
+    <button id="supp" (click)="suppDialog('')">Supprimer le film</button>
+</div>
+
+<div id="film" [ngStyle]="{'background-image': 'linear-gradient(
+    rgba(40, 40, 40, 0.9),
+    rgba(40, 40, 40, 0.9)), url(' + this.poster + ')','background-repeat': 'repeat'}">
+
+
+    <div id="leposter">
+        <img src={{this.poster}} alt={{currentFilm.Title} id="images">
+    </div>
+    <div id="infos" *ngIf="currentFilmInfos">
+        <div id="titre">{{currentFilm.Title}}</div>
+            <p id="soustitre">( {{currentFilm.Year}} ) - {{currentFilm.Genre}} - {{currentFilm.Runtime}}</p>
+        <div id="details">
+            <div class="wrapper">
+            <div>
+                <mat-icon class="icone">star_border</mat-icon>
+                <p><span class="bold">Note :</span>  {{currentFilmInfos.note}}/5</p>
+            </div>
+            <div>
+                <mat-icon class="icone">camera_roll</mat-icon>
+                <p><span class="bold">Date de visionnage :</span>  {{currentFilmInfos.dateVision}}</p>
+            </div>
+            <div>
+		        <mat-icon class="icone"> place</mat-icon>
+                <p><span class="bold">Cinéma :</span>  {{currentFilmInfos.cinema}}</p>
+            </div>
+            <div>
+                <mat-icon class="icone">supervisor_account</mat-icon>
+                <p><span class="bold">Accompagnateurs :</span>  {{currentFilmInfos.accompagnateurs}}</p>
+            </div>
+            <div>
+                <mat-icon class="icone"> local_movies</mat-icon>
+                <p><span class="bold">Avis :</span> {{currentFilmInfos.avis}}</p>
+            </div>
+            </div>
+            <hr/>
+            <div id="wrapper2">
+                <div>
+                    <mat-icon class="icone">movie_creation</mat-icon>
+                    <p><span class="bold">Acteurs :</span> {{currentFilm.Actors}}</p>
+                    <details>
+                        <summary>
+                            <p id="texte">voir plus</p>
+                        </summary>
+                        <ul>
+                            <li *ngFor="let item of actors | keyvalue;"> {{item.key}} ({{item.value}})</li>
+                        </ul>
+                    </details>
+                </div>
+                <div>
+                    <mat-icon class="icone">rate_review</mat-icon>
+                    <p><span class="bold">Réalisateurs :</span>  {{this.realisator}}</p>
+                </div>
+                <div>
+                    <mat-icon class="icone">calendar_month</mat-icon>
+                    <p><span class="bold">Année :</span>  {{currentFilm.Year}}</p>
+                </div>
+                <div>
+                    <mat-icon class="icone">access_time</mat-icon>
+                    <p><span class="bold">Durée :</span>  {{currentFilm.Runtime}}</p>
+                </div>
+                <div>
+                    <mat-icon class="icone">event_note</mat-icon>
+                    <p><span class="bold">Synopsis : </span> {{currentFilm.Plot}}</p>
+                </div>
+                <div>
+                    <mat-icon class="icone">stars</mat-icon>
+                    <p id="ligne"> 
+                        <details>
+                            <summary>
+                                <span class="bold">Critiques :</span>
+                                <p id="texte"> afficher les critiques</p>
+                            </summary>
+                            <ul *ngFor="let rev of listeRevue.results">
+                                <li> 
+                                    <ul id="det">
+                                        <li><span class="bold">utilisateur : </span>{{rev.author}}</li>
+                                        <li><span class="bold"> critique : </span>{{rev.content}}</li>
+                                        <li><span class="bold">en savoir + : </span><a href="{{rev.url}}">{{rev.url}}</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </details>
+                    </p>
+                </div>
+        </div>
+    </div>
+</div>
