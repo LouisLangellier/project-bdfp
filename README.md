@@ -33,7 +33,7 @@ Installation
 
 * Ouvrez un terminal
 
-* Clonez le projet vous devez ouvir un terminal et taper la commande suivante : git clone https://mi-git.univ-tlse2.fr/Louis.LANGELLIER/project-bdfp.git
+* Clonez le projet vous devez ouvir un terminal et taper la commande suivante : git clone https://github.com/LouisLangellier/project-bdfp.git
 
 * Exécutez la commande suivante "cd .\Project_BDFP\" afin de changer de dossier.
 
