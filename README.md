@@ -26,7 +26,7 @@ Ouvrez le fichier téléchargé et suivez l'assitant d'installation.
 * Angular : 
 Ouvrez un terminal et tapez la commande suivante : npm install -g @angular/cli
 * Git :
-Vous devez posséder un compte sur le site https://mi-git.univ-tlse2.fr/ et avoir les droits d'accès au projet.
+Vous devez posséder un compte sur le site https://github.com et avoir les droits d'accès au projet.
 
 Installation
 ------------
@@ -35,7 +35,7 @@ Installation
 
 * Clonez le projet vous devez ouvir un terminal et taper la commande suivante : git clone https://github.com/LouisLangellier/project-bdfp.git
 
-* Exécutez la commande suivante "cd .\Project_BDFP\" afin de changer de dossier.
+* Placez vous dans le dossier téléchargé et exécutez la commande suivante "cd .\Project_BDFP\" afin de changer de dossier.
 
 * Exécutez la commande "npm install" pour installer les dépendances nécessaires au projet.
 
