@@ -24,7 +24,7 @@ Installation du projet
 
 * Ouvrez le gestionnaire de fichiers et deplacez vous dans un dossier où vous souhaitez avoir l'application. Click droit à l'interieur du dossier et prenez l'option `Ouvrir dans un Terminal`.
 
-* Clonez le projet. Pour cela, vous devez taper la commande suivante dans le terminal : `git clone https://mi-git.univ-tlse2.fr/Louis.LANGELLIER/project-bdfp.git`. ATTENTION : Cette action ne doit être faite qu'une seule fois !
+* Clonez le projet. Pour cela, vous devez taper la commande suivante dans le terminal : `git clone https://github.com/LouisLangellier/project-bdfp.git`. ATTENTION : Cette action ne doit être faite qu'une seule fois !
 
 * Exécutez la commande suivante `cd project-bdfp\Project_BDFP` afin de changer de dossier.
 
